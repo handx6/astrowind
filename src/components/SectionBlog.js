@@ -10,8 +10,7 @@ export default function SectionBlog() {
             Find out more content in our blog
           </h3>
           <a href="" className="pt-2 text-gray-500 text-xs">
-            View all posts {">"}
-            {">"}
+            View all posts »
           </a>
         </div>
         <div className="w-1/3">
