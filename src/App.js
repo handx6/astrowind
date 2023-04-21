@@ -1,7 +1,9 @@
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import SectionBlog from "./components/SectionBlog";
 import SectionComponents from "./components/SectionComponents";
 import SectionDream from "./components/SectionDream";
+import SectionEnd from "./components/SectionEnd";
 import SectionFaq from "./components/SectionFaq";
 import SectionFeature from "./components/SectionFeatures";
 import SectionInside from "./components/SectionInside";
@@ -20,7 +22,9 @@ function App() {
         <SectionComponents />
         <SectionBlog />
         <SectionFaq />
+        <SectionEnd />
       </main>
+      <Footer />
     </div>
   );
 }

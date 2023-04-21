@@ -10,14 +10,9 @@ import {
 } from "react-icons/tb";
 import { BsListCheck } from "react-icons/bs";
 import { HiOutlineLightBulb } from "react-icons/hi";
+import { dataCards } from "../data/dataCardFeatures";
 
 export default function SectionFeature() {
-    const tailwindIcon = <TbBrandTailwind className="text-xl"/>;
-    const componentsIcon = <TbComponents className="text-xl" />;
-    const checkListIcon = <BsListCheck className="text-xl" />;
-    const rocketIcon = <TbRocket className="text-xl" />;
-    const arrowsIcon = <TbArrowsLeftRight className="text-xl" />;
-    const lightbulbIcon = <HiOutlineLightBulb className="text-xl" />;
   return (
     <>
       <div className="flex justify-center bg-blue-100 items-center space-x-2 p-4">
@@ -35,7 +30,7 @@ export default function SectionFeature() {
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quibusdam veniam soluta itaque fuga? At, in minima."
         />
       </div>
-      <div className="flex justify-center pb-20">
+      {/* <div className="flex justify-center pb-20">
         <div className="w-full flex flex-wrap gap-4 items-start px-2 justify-center">
           <div className="w-[45%]">
             <CardFeature
@@ -72,6 +67,16 @@ export default function SectionFeature() {
             />
           </div>
         </div>
+      </div> */}
+      <div className="grid grid-cols-2 gap-y-5 px-20 justify-center pb-20">
+        {dataCards.map((item, index) => (
+          <CardFeature
+            key={index}
+            title={item.title}
+            icon={item.icon}
+            text={item.description}
+          />
+        ))}
       </div>
     </>
   );
